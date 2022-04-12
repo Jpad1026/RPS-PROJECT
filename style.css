@@ -1,0 +1,28 @@
+.rps_img {
+    height: 150px;
+    width: 150px;
+    float: right;
+}
+
+body {
+  background-color: saddlebrown;
+}
+
+.center{
+  text-align: center;
+  color: sandybrown;
+}
+
+.top{
+  text-align: center;
+  font-size: 50px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: sandybrown;
+}
+
+.options{
+  text-align: center;
+  font-size: 25px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  color: sandybrown;
+}

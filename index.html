@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title> 🗿 , 📝, ✂️</title>
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <section class="game">
+    <!--Title -->
+
+    <center><div class="title top">
+      Rock Paper Scisssors
+    </div></center>
+    <!-- Scoreboard Display for teh User and AI-->
+    <div class="score">
+      <div class="playerScore">
+        <h2 class="center"> Player </h2>
+        <p class="p-count center" id="player_Count"> 0 </p>
+      </div>
+
+      <div class="computerScore">
+        <h2 class="center"> Computer </h2>
+        <p class="c-count center" id="computer_Count"> 0 </p>
+      </div>
+    </div>
+
+    <!-- Instructions -->
+    <div class="move options"> Choose your move </div>
+
+    <div class="options">
+      <center>
+        <br>
+        <br>
+      <button class="Rock" onclick ="throwRock()"><center> ROCK</center> <img src="https://assets.stickpng.com/images/580b585b2edbce24c47b26f6.png" class="rps_img"> </button>
+      <button class="Paper"onclick ="throwPaper()"><center> PAPER</center> <img src="https://www.pngitem.com/pimgs/m/31-318098_collection-of-high-transparent-background-paper-clipart-hd.png" class="rps_img"> </button>
+      <button class="Scisssors"onclick ="throwScissor()"><center> SCISSORS</center> <img src="https://freepngimg.com/thumb/scissor/36873-8-scissors-transparent.png" class="rps_img"> </button>
+    </center>
+    </div>
+    <!-- Show result of the round-->
+    <div class="result"></div>
+
+    <!-- Button to reset the Score-->
+    <div class="reset"></div>
+
+
+  </section>
+
+
+
+
+
+
+
+  <script src="script.js">
+
+  </script>
+</body>
+
+</html>
