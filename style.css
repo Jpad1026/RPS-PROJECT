@@ -26,3 +26,8 @@ body {
   font-family: "Arial", "Helvetica", sans-serif;
   color: sandybrown;
 }
+.result{
+  font-size: 25px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: sandybrown;
+}

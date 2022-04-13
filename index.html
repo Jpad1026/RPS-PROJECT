@@ -12,9 +12,11 @@
   <section class="game">
     <!--Title -->
 
-    <center><div class="title top">
-      Rock Paper Scisssors
-    </div></center>
+    <center>
+      <div class="title top">
+        Rock Paper Scisssors
+      </div>
+    </center>
     <!-- Scoreboard Display for teh User and AI-->
     <div class="score">
       <div class="playerScore">
@@ -35,18 +37,27 @@
       <center>
         <br>
         <br>
-      <button class="Rock" onclick ="throwRock()"><center> ROCK</center> <img src="https://assets.stickpng.com/images/580b585b2edbce24c47b26f6.png" class="rps_img"> </button>
-      <button class="Paper"onclick ="throwPaper()"><center> PAPER</center> <img src="https://www.pngitem.com/pimgs/m/31-318098_collection-of-high-transparent-background-paper-clipart-hd.png" class="rps_img"> </button>
-      <button class="Scisssors"onclick ="throwScissor()"><center> SCISSORS</center> <img src="https://freepngimg.com/thumb/scissor/36873-8-scissors-transparent.png" class="rps_img"> </button>
-    </center>
+        <button class="Rock" onclick="throwRock()">
+          <center> ROCK</center> <img src="https://assets.stickpng.com/images/580b585b2edbce24c47b26f6.png" class="rps_img">
+        </button>
+        <button class="Paper" onclick="throwPaper()">
+          <center> PAPER</center> <img src="https://www.pngitem.com/pimgs/m/31-318098_collection-of-high-transparent-background-paper-clipart-hd.png" class="rps_img">
+        </button>
+        <button class="Scisssors" onclick="throwScissor()">
+          <center> SCISSORS</center> <img src="https://freepngimg.com/thumb/scissor/36873-8-scissors-transparent.png" class="rps_img">
+        </button>
+      </center>
     </div>
     <!-- Show result of the round-->
-    <div class="result"></div>
-
-    <!-- Button to reset the Score-->
-    <div class="reset"></div>
-
-
+    <br>
+    <br>
+    <center>
+      <div class="result" id="get"></div>
+      <div class="reset">
+        <br>
+        <button  onclick='reset()'> Reset</button>
+      </div>
+    </center>
   </section>
 
 

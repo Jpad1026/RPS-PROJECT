@@ -1,8 +1,8 @@
 // Starting variables //
 // Starting HTML eleemnts as a varible for easy access //
 let pScoreboard = document.querySelector('p-count')
-let cScoreboard = document.querySelector('p-count')
-let roundResult = document.querySelector('p-count')
+let cScoreboard = document.querySelector('c-count')
+let roundResult = document.querySelector('.result')
 //setting score variables for player & computer to track score//
 let playerScore = 0;
 let computerScore = 0;
@@ -12,6 +12,7 @@ let playerChoice;
 // initialize Global variables for the Scoreboard//
 let playerCount = document.getElementById("player_Count");
 let computerCount = document.getElementById("computer_Count");
+let grab = document.getElementById('get');
 //function to randomly generate a choice for the computer, uses a list to store selctions//
 function computerChoice() {
   const computerOptions = ["rock", "paper", "scissor"];
@@ -44,31 +45,37 @@ function playGame(player, computer) {
     console.log("Player Wins");
     player_Score();
     console.log(playerScore);
+    get.textContent = "Player wins";
   }
-  //FINISH THIS //
+  //Player winning //
   else if (player === "paper" && computer === "rock") {
     console.log("Player Wins");
     player_Score();
     console.log(playerScore);
+    get.textContent = "Player wins";
   } else if (player === "scissor" && computer === "paper") {
     console.log("Player Wins");
     player_Score();
     console.log(playerScore);
+    get.textContent = "Player wins";
   }
   //Ties in the game //
   else if (player === "rock" && computer === "rock") {
     console.log("Tie game!");
+    get.textContent = "This is a tie";
   } else if (player === "paper" && computer === "paper") {
     console.log("Tie game!");
+    get.textContent = "This is a tie";
   } else if (player === "scissor" && computer === "scissor") {
     console.log("Tie game!");
+    get.textContent = "This is a tie";
   }
   //computer wins//
   else {
     console.log("Computer Wins!");
     computer_Score();
     console.log(computerScore);
-
+    get.textContent = "Computer wins";
   }
 }
 
@@ -83,4 +90,15 @@ function player_Score(){
 function computer_Score(){
   computerScore = computerScore+1;
   computerCount.textContent = computerScore;
+}
+
+
+//Reset//
+function reset(){
+  get.innerHTML="";
+  computerScore=0;
+  playerScore=0;
+  computerCount.textContent = computerScore;
+  playerCount.textContent = playerScore;
+  console.log()
 }
